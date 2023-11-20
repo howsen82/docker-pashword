@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  pashword:
+    container_name: pashword
+    image: peppershade/pashword:dev
+    ports:
+      - 3000:3000
+    restart: unless-stopped
